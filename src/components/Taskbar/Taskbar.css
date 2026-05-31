@@ -1,0 +1,9 @@
+#Taskbar{
+    height:60px;
+    width:99.7%;
+    background-color: rgb(206, 205, 205);
+    grid-area:stack;
+    place-self:end;
+    border:2px solid black;
+    border-radius:10px;
+}

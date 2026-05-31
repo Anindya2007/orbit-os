@@ -1,0 +1,4 @@
+#Desktop-page{
+    display:grid;
+    grid-template-areas:'stack';
+}
