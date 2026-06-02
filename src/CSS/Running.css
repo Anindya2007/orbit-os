@@ -1,0 +1,11 @@
+#running-apps{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.running-app{
+    border-radius: 10px;
+    padding: 5px;
+    border-bottom:2px solid rgb(215, 214, 214);
+}

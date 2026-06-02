@@ -1,0 +1,26 @@
+#clock-div{
+    cursor:default;
+    border:1px solid black;
+    padding:9.8px;
+    border-radius:10px;
+    height:fit-content;
+    width:fit-content;
+    align-self:flex-end;
+    color:black;
+    background: rgb(239, 239, 239);
+    font-size:18px;
+    font-weight:lighter;
+}
+
+#clock-div:hover{
+    background: rgba(255,255,255,0.12);
+    color:white;
+    box-shadow:
+        0 0 8px rgba(147,197,253,0.20),
+        0 0 16px rgba(147,197,253,0.15),
+        0 0 24px rgba(147,197,253,0.08);
+}
+
+h3{
+    margin:0px;
+}
