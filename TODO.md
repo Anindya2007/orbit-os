@@ -1,3 +1,0 @@
-- [ ] Update App.jsx to pass taskbar data into Taskbar component
-- [ ] Update Running.jsx to safely handle undefined/non-array data
-- [ ] Build test to ensure no runtime-breaking compile issues
