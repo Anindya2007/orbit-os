@@ -1,0 +1,32 @@
+#exit-btn {
+    height: 50px;
+    width: 80px;
+    font-weight: bold;
+    background-color: none;
+}
+#exit-btn:hover{
+    background-color: rgb(241, 38, 38);
+    box-shadow: white 1px 1px 1px;
+}
+
+#minimise-btn{
+    height: 50px;
+    width: 80px;
+    font-weight: bold;
+    background-color: none;
+}
+#minimise-btn{
+    box-shadow: white 1px 1px 1px;
+    background-color: rgb(13, 72, 199) ;
+}
+
+#maximise-btn{
+    height: 50px;
+    width: 80px;
+    font-weight: bold;
+    background-color: none;
+}
+#maximise-btn{
+    box-shadow: white 1px 1px 1px;
+    background-color: rgb(13, 72, 199) ;
+}
