@@ -1,32 +1,45 @@
 #exit-btn {
-    height: 50px;
-    width: 80px;
+    height: 20px;
+    width: 40px;
     font-weight: bold;
     background-color: none;
+    transition:ease-in-out 0.2s;
+    
 }
 #exit-btn:hover{
     background-color: rgb(241, 38, 38);
     box-shadow: white 1px 1px 1px;
+    color:white
 }
 
 #minimise-btn{
-    height: 50px;
-    width: 80px;
+    height: 20px;
+    width: 40px;
     font-weight: bold;
     background-color: none;
+    transition:ease-in-out 0.2s;
+    
 }
-#minimise-btn{
+#minimise-btn:hover{
     box-shadow: white 1px 1px 1px;
-    background-color: rgb(13, 72, 199) ;
+    background-color: rgb(13, 149, 199) ;
+    color:white;
 }
 
 #maximise-btn{
-    height: 50px;
-    width: 80px;
+    height: 20px;
+    width: 40px;
     font-weight: bold;
     background-color: none;
+    transition:ease-in-out 0.2s;
+    
 }
-#maximise-btn{
-    box-shadow: white 1px 1px 1px;
-    background-color: rgb(13, 72, 199) ;
+#maximise-btn:hover{
+    box-shadow:  1.5px 1.5px 1px white;
+    background-color: rgb(13, 149, 199) ;
+    color:white
+}
+
+#open-app-icon{
+    padding-left: 10px;
 }

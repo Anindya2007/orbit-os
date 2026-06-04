@@ -10,7 +10,7 @@ export default function OS(){
   {
     id: "notes",
     name: "Notes",
-    icon: "📝",
+    icon: "https://tse1.mm.bing.net/th/id/OIP.Nr_d-NYDBdz0A3QFqyO44AHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
 
     isOpen: false,
     isMinimized: false,
@@ -33,7 +33,7 @@ export default function OS(){
   {
     id: "gallery",
     name: "Gallery",
-    icon: <Image/>,
+    icon: 'https://cdn.pixabay.com/photo/2022/07/30/07/50/gallery-7353267_1280.png',
 
     isOpen: false,
     isMinimized: false,
@@ -56,7 +56,7 @@ export default function OS(){
   {
     id: "calculator",
     name: "Calculator",
-    icon: "🧮",
+    icon: "https://getdrawings.com/free-icon/windows-calculator-icon-64.png",
 
     isOpen: true,
     isMinimized: false,
@@ -79,31 +79,31 @@ export default function OS(){
   {
     id: "prera",
     name: "Prera",
-    icon:"/Prera.png",
-
+    icon:'/Prera.png',
+    
     isOpen: false,
     isMinimized: false,
     isMaximized: false,
     isFocused: false,
-
+    
     dimensions: {
       width: 450,
       height: 550,
     },
-
+    
     position: {
       x: 160,
       y: 160,
     },
-
+    
     zIndex: 0,
   },
-
+  
   {
     id: "settings",
     name: "Settings",
-    icon: "⚙️",
-
+    icon:'https://tse2.mm.bing.net/th/id/OIP.YMOdfxzCTbVfZ3t1EOpwOAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
+    
     isOpen: true,
     isMinimized: false,
     isMaximized: false,

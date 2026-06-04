@@ -7,7 +7,7 @@ export default function Running({data}){
             return apps.isOpen==true;})
 
             .map((app,ind)=>{
-            return <button key={ind} className='running-app'>{app.icon}</button>
+            return <button key={ind} className='running-app'><img style={{height:'35px',width:'35px',borderRadius:'10px'}} src={app.icon}/></button>
         })}
     </div>)
 }
