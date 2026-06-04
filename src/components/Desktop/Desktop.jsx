@@ -3,6 +3,15 @@ import '../../CSS/Desktop.css';
 
 export default function Desktop({ Wallpaper,app,setApp }) {
 
+  function Open(index){
+    console.log('Double clicked',index)
+    setApp(prev=>{
+      return prev.map((obj,i)=>{
+
+        return i==index? {...obj,isOpen:true} : obj
+      })
+    })
+  }
 
     return (
         <div
@@ -11,10 +20,10 @@ export default function Desktop({ Wallpaper,app,setApp }) {
 
           <div style={{width:'500px',height:'88vh',display:'flex',gap:'10px'}}>  
 
-            {app.map((App)=>{
+            {app.map((App,index)=>{
                 return(<div key={App.id} className='apps'>
                   
-                    <button className='icon-app'>{App.icon}</button>
+                    <button className='icon-app' onClick={()=>Open(index)}>{App.icon}</button>
                     <p style={{margin:0, fontSize:'15px',cursor:'default'}}>{App.name}</p>
 
                 </div>)
