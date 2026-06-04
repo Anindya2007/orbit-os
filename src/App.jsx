@@ -2,6 +2,7 @@ import './App.css';
 import {useState} from 'react';
 import Desktop from './components/Desktop/Desktop.jsx';
 import Taskbar from './components/Taskbar/Taskbar.jsx'
+import { Image } from "lucide-react";
 
 export default function OS(){
   // Below is the data for a single app in taskbar.
@@ -30,9 +31,9 @@ export default function OS(){
   },
 
   {
-    id: "todo",
-    name: "Todo",
-    icon: "✅",
+    id: "gallery",
+    name: "Gallery",
+    icon: <Image/>,
 
     isOpen: false,
     isMinimized: false,
@@ -76,9 +77,9 @@ export default function OS(){
   },
 
   {
-    id: "pomodoro",
-    name: "Pomodoro",
-    icon: "⏱️",
+    id: "prera",
+    name: "Prera",
+    icon:"/Prera.png",
 
     isOpen: false,
     isMinimized: false,
