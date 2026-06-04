@@ -3,19 +3,11 @@ import {Atom} from 'lucide-react';
 import Clock from './Clock.jsx';
 import Running from './Running.jsx';
 
-export default function Taskbar(){
-
-    const data=[
-        {
-    id: "notes",
-    name: "Notes",
-    icon: "📝",
-  }
-];
+export default function Taskbar({app}){
 
     return (<div id='Taskbar'>
         <button id='orbit-button'>{<Atom size={35}/>} OrbitOS</button>
-        <div id='taskbar-content'> {<Running data={data}/>}</div>
+        <div id='taskbar-content'> {<Running data={app}/>}</div>
         <Clock/>
     </div>)
 }
