@@ -4,7 +4,7 @@
     font-weight: bold;
     background-color: none;
     transition:ease-in-out 0.2s;
-    
+    margin:auto
 }
 #exit-btn:hover{
     background-color: rgb(241, 38, 38);
@@ -18,28 +18,13 @@
     font-weight: bold;
     background-color: none;
     transition:ease-in-out 0.2s;
-    
+    padding:auto 0px auto 0px
 }
 #minimise-btn:hover{
     box-shadow: white 1px 1px 1px;
     background-color: rgb(13, 149, 199) ;
     color:white;
 }
-
-#maximise-btn{
-    height: 20px;
-    width: 40px;
-    font-weight: bold;
-    background-color: none;
-    transition:ease-in-out 0.2s;
-    
-}
-#maximise-btn:hover{
-    box-shadow:  1.5px 1.5px 1px white;
-    background-color: rgb(13, 149, 199) ;
-    color:white
-}
-
 #open-app-icon{
     padding-left: 10px;
 }

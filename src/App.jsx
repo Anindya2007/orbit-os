@@ -3,7 +3,7 @@ import {useState} from 'react';
 import Desktop from './components/Desktop/Desktop.jsx';
 import Taskbar from './components/Taskbar/Taskbar.jsx'
 import Gallery from './Apps/Gallery/Gallery/src/App.jsx';
-import Prera from './Apps/Prera/prera-website/src/Prera.jsx.jsx';
+
 
 export default function OS(){
   // Below is the data for a single app in taskbar.
@@ -77,30 +77,6 @@ export default function OS(){
     },
 
     zIndex: 0,
-  },
-
-  {
-    id: "prera",
-    name: "Prera",
-    icon:'/Prera.png',
-    
-    isOpen: false,
-    isMinimized: false,
-    isMaximized: false,
-    isFocused: false,
-    
-    dimensions: {
-      width: 450,
-      height: 550,
-    },
-    
-    position: {
-      x: 160,
-      y: 160,
-    },
-    
-    zIndex: 0,
-    content:<Prera/>
   },
   
   {

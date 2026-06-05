@@ -1,17 +1,33 @@
 import '../../CSS/appwindow.css'
 
-export default function Opened({obj}){
+export default function Opened({obj,app,setApp}){
+    // The function below is to make minimise button functional.
+    function minimise(){
+        setApp(()=>{
+            return app.map((app_data)=>{
+                return app_data.id==obj.id? {...app_data,isMinimized:!app_data.isMinimized}:app_data;
+            })
+        })
+    }
     
-    return (<div style={{display:obj.isMinimized?'none':'block' ,
-    height:'94vh',width:'100%',border:'1px solid white',position:'absolute',zIndex:obj.zIndex}}>
+    // The below button is to make the close button functional.
+    function closed(){
+        setApp(()=>{
+            return app.map((app_data)=>{
+                return app_data.id==obj.id? {...app_data,isOpen:!app_data.isOpen}:app_data;
+            })
+        })
+    }
+
+    return (<div style={{display:obj.isMinimized?'none':'block' ,height:'89vh',margin:'0px 0px 0px 30px',
+    width:'96%',border:'1px solid white',position:'absolute',top:'0px',left:'0px',zIndex:obj.zIndex}}>
 
         <div style={{height:'20px',width:'100%',
-        display:'flex',flexDirection:'row-reverse',justifyContent:'space-between',overflow:'hidden'}}>
+        display:'flex',flexDirection:'row-reverse',justifyContent:'space-between'}}>
 
             <div>
-            <button id='exit-btn'>X</button>
-            <button id='maximise-btn'>+</button>
-            <button id='minimise-btn'>-</button>
+            <button id='minimise-btn' onClick={minimise}>-</button>
+            <button id='exit-btn' onClick={closed}>X</button>
             </div>
 
             <div id='open-app-icon'>
@@ -20,8 +36,8 @@ export default function Opened({obj}){
             </div>
         </div>
 
-        <div style={{height:'calc(94vh - 20px)',
-        width:'100%',overflow:'hidden'}}>
+        <div style={{height:'calc(89vh - 20px)',
+        width:'100%'}}>
             {obj.content}
         </div>
 

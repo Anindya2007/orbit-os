@@ -1,7 +1,7 @@
 .apps {
     color: 'white';
     width: fit-content;
-    height: fit-content;
+    height: fit-content; 
     text-align: center;
     margin: 10px 20px 10px 20px;
     color: white;
@@ -18,7 +18,8 @@
     font-size: 36px;
     padding: 3px 4px;
     background: none;
+    width: fit-content;
     border: none;
     border-radius: 12px;
-    cursor: default
+    cursor: default;
 }
