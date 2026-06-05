@@ -2,7 +2,7 @@ import './App.css';
 import {useState} from 'react';
 import Desktop from './components/Desktop/Desktop.jsx';
 import Taskbar from './components/Taskbar/Taskbar.jsx'
-import Gallery from './Apps/Gallery/Gallery/src/App.jsx';
+import Gallery from './Apps/Gallery/App.jsx';
 
 
 export default function OS(){
