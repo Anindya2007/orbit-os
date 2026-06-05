@@ -2,7 +2,8 @@ import './App.css';
 import {useState} from 'react';
 import Desktop from './components/Desktop/Desktop.jsx';
 import Taskbar from './components/Taskbar/Taskbar.jsx'
-import { Image } from "lucide-react";
+import Gallery from './Apps/Gallery/Gallery/src/App.jsx';
+import Prera from './Apps/Prera/prera-website/src/Prera.jsx.jsx';
 
 export default function OS(){
   // Below is the data for a single app in taskbar.
@@ -28,6 +29,7 @@ export default function OS(){
     },
 
     zIndex: 0,
+    
   },
 
   {
@@ -51,6 +53,7 @@ export default function OS(){
     },
 
     zIndex: 0,
+    content:<Gallery/>
   },
 
   {
@@ -58,7 +61,7 @@ export default function OS(){
     name: "Calculator",
     icon: "https://getdrawings.com/free-icon/windows-calculator-icon-64.png",
 
-    isOpen: true,
+    isOpen: false,
     isMinimized: false,
     isMaximized: false,
     isFocused: false,
@@ -97,6 +100,7 @@ export default function OS(){
     },
     
     zIndex: 0,
+    content:<Prera/>
   },
   
   {
@@ -104,7 +108,7 @@ export default function OS(){
     name: "Settings",
     icon:'https://tse2.mm.bing.net/th/id/OIP.YMOdfxzCTbVfZ3t1EOpwOAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
     
-    isOpen: true,
+    isOpen: false,
     isMinimized: false,
     isMaximized: false,
     isFocused: false,

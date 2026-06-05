@@ -3,11 +3,9 @@ import '../../CSS/appwindow.css'
 export default function Opened({obj}){
     
     return (<div style={{display:obj.isMinimized?'none':'block' ,
-    height:!obj.isMaximized?`${obj.dimensions.height}px`:'94vh',
-    width:!obj.isMaximized?`${obj.dimensions.width}px`:'100%',
-    position:'absolute',top:`${obj.position.y}px`,left:`${obj.position.x}px`,border:'1px solid white'}}>
+    height:'94vh',width:'100%',border:'1px solid white',position:'absolute',zIndex:obj.zIndex}}>
 
-        <div style={{height:'20px',width:!obj.isMaximized?`${obj.dimensions.width}px`:'100%',
+        <div style={{height:'20px',width:'100%',
         display:'flex',flexDirection:'row-reverse',justifyContent:'space-between',overflow:'hidden'}}>
 
             <div>
@@ -22,9 +20,9 @@ export default function Opened({obj}){
             </div>
         </div>
 
-        <div style={{height:!obj.isMaximized?`${obj.dimensions.height-20}px`:'calc(94vh - 20px)',
-        width:!obj.isMaximized?`${obj.dimensions.width}px`:'100%',overflow:'hidden'}}>
-
+        <div style={{height:'calc(94vh - 20px)',
+        width:'100%',overflow:'hidden'}}>
+            {obj.content}
         </div>
 
     </div>)
