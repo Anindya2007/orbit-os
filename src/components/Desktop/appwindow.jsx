@@ -20,10 +20,10 @@ export default function Opened({obj,app,setApp}){
     }
 
     return (<div style={{display:obj.isMinimized?'none':'block' ,height:'89vh',margin:'0px 0px 0px 30px',
-    width:'96%',border:'1px solid white',position:'absolute',top:'0px',left:'0px',zIndex:obj.zIndex}}>
+    width:'96%',border:'2px solid white',borderRadius:'10px',position:'absolute',top:'0px',left:'0px',zIndex:obj.zIndex,backgroundColor:'black'}}>
 
-        <div style={{height:'20px',width:'100%',
-        display:'flex',flexDirection:'row-reverse',justifyContent:'space-between'}}>
+        <div style={{height:'30px',width:'98%',marginBottom:'0px',backgroundColor:'rgb(0,0,0)',borderRadius:'10px',
+        display:'flex',flexDirection:'row-reverse',justifyContent:'space-between',borderBottom:'1px solid white',alignItems:'center',padding:'0px 10px 0px 10px'}}>
 
             <div>
             <button id='minimise-btn' onClick={minimise}>-</button>
@@ -36,8 +36,7 @@ export default function Opened({obj,app,setApp}){
             </div>
         </div>
 
-        <div style={{height:'calc(89vh - 20px)',
-        width:'100%'}}>
+        <div style={{height:'calc(89vh - 30px)',overflowY:'auto',overflowX:'hidden',width:'100%'}}>
             {obj.content}
         </div>
 
